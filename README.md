@@ -14,7 +14,7 @@ Add this line to your `~/.bashrc`
 
 To install the models do
 
-```bash
+```
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=~/.gazebo ..
@@ -23,7 +23,7 @@ make install
 
 To uninstall the models do
 
-```bash
+```
 cd build
 make uninstall
 ```
