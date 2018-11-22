@@ -4,7 +4,7 @@
 <!-- Goal. -->
 <model name="goal">
   <link name="goal">
-    <pose>4 0 0 0 0 0</pose>
+    <pose>0 0 0 0 0 0</pose>
   
     <collision name="goal_collision">
       <geometry>
@@ -22,8 +22,8 @@
       </geometry>
       <material>
         <script>
-          <uri>model://vehicle/materials/scripts</uri>
-          <uri>model://vehicle/materials/textures</uri>
+          <uri>model://goal/materials/scripts</uri>
+          <uri>model://goal/materials/textures</uri>
           <name>vehicle/goal</name>
         </script>
       </material>

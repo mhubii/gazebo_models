@@ -4,7 +4,7 @@
 <!-- Obstacle -->
 <model name="obstacle">
   <link name="obstacle">
-    <pose>2 0 0 0 0 0</pose>
+    <pose>0 0 0 0 0 0</pose>
   
     <collision name="collision">
       <geometry>
@@ -22,8 +22,8 @@
       </geometry>
       <material>
         <script>
-          <uri>model://vehicle/materials/scripts</uri>
-          <uri>model://vehicle/materials/textures</uri>
+          <uri>model://obstacle/materials/scripts</uri>
+          <uri>model://obstacle/materials/textures</uri>
           <name>vehicle/obstacle</name>
         </script>
       </material>
