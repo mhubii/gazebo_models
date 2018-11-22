@@ -4,6 +4,29 @@ This repository holds models for gazebo. Note that some of the models only funct
 
 ## Build
 
+You can either install the models to a location that Gazebo knows, or update the path, where Gazebo is looking for models. Updating the path will usually keep your system cleaner.
+
+### Update Path
+
+Add this line to your `~/.bashrc`
+
+### Install
+
+To install the models do
+
+```bash
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=~/.gazebo ..
+make install
+```
+
+To uninstall the models do
+
+```bash
+cd build
+make uninstall
+```
 
 ## Models
 
