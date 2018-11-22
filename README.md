@@ -12,7 +12,7 @@ The repository holds following models.
 
 <br>
 <figure>
-  <p align="center"><img src="img/goal.jpg" width="40%" height="40%" hspace="40"><img src="img/obstacle.jpg" width="40%" height="40%" hspace="40"><img src="img/vehicle.jpg" width="40%" height="40%" hspace="40"></p>
+  <p align="center"><img src="img/goal.jpg" width="30%" height="30%" hspace="40"><img src="img/obstacle.jpg" width="30%" height="30%" hspace="40"><img src="img/vehicle.jpg" width="30%" height="30%" hspace="40"></p>
   <figcaption>Fig. 1: Models from left to right: Goal, obstacle, vehicle. </figcaption>
 </figure>
 <br><br>
