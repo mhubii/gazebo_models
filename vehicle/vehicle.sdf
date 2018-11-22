@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+
+<!-- Vehicle -->
+<model name="vehicle">
+
+  <pose>0 0 0.1 0 0 0</pose>
+  <static>false</static>
+  
+  <link name="chassis">
+    <pose>0 0 0 0 0 0</pose>
+
+    <inertial>
+      <inertia>
+        <!-- (mass / 12) * (y*y + z*z) -->
+        <ixx>0.0041666666666666675</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <!-- (mass / 12) * (x*x + z*z) -->
+        <iyy>0.03083333333333333</iyy>
+        <iyz>0</iyz>
+        <!-- (mass / 12) * (y*y + x*x) -->
+        <izz>0.03333333333333333</izz>
+      </inertia>
+    </inertial>
+    
+    <collision name="chassis_collision">
+      <geometry>
+        <box>
+          <size>.6 .2 .1</size>
+        </box>
+      </geometry>
+    </collision>
+
+    <sensor name="chassis_contact" type="contact">
+      <contact>
+        <collision>chassis_collision</collision>
+      </contact>
+    </sensor>
+
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>.6 .2 .1</size>
+        </box>
+      </geometry>
+    </visual>
+
+    <!-- Stereocamera -->
+    <sensor type="multicamera" name="stereo_camera">
+      <pose>.3 0 .15 0 0 0</pose>
+      <visualize>true</visualize>
+      <always_on>1</always_on>
+      <update_rate>30</update_rate>
+
+      <camera name="left">
+        <pose>0 .1 0 0 0 0</pose>
+        <horizontal_fov>1.5708</horizontal_fov>
+        <image>
+          <width>320</width>
+          <height>240</height>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>100</far>
+        </clip>
+      </camera>
+
+      <camera name="right">
+        <pose>0 -.1 0 0 0 0</pose>
+        <horizontal_fov>1.5708</horizontal_fov>
+        <image>
+          <width>320</width>
+          <height>240</height>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>100</far>
+        </clip>
+      </camera>
+    </sensor>
+  </link>
+
+  <link name="l_front_wheel">
+    <pose>.2 .21 0 0 0 0</pose>
+    
+    <inertial>
+      <inertia>
+        <!-- (2*mass / 5) * (r*r) -->
+        <ixx>0.004000000000000001</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <iyy>0.004000000000000001</iyy>
+        <iyz>0</iyz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <izz>0.004000000000000001</izz>
+      </inertia>
+    </inertial>
+
+    <collision name="l_front_wheel_collision">
+      <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+
+    <visual name="visual">
+       <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="r_front_wheel">
+    <pose>.2 -.21 0 0 0 0</pose>
+    
+    <inertial>
+      <inertia>
+        <!-- (2*mass / 5) * (r*r) -->
+        <ixx>0.004000000000000001</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <iyy>0.004000000000000001</iyy>
+        <iyz>0</iyz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <izz>0.004000000000000001</izz>
+      </inertia>
+    </inertial>
+
+    <collision name="r_front_wheel_collision">
+      <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+
+    <visual name="visual">
+       <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="l_back_wheel">
+    <pose>-.2 .21 0 0 0 0</pose>
+    
+    <inertial>
+      <inertia>
+        <!-- (2*mass / 5) * (r*r) -->
+        <ixx>0.004000000000000001</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <iyy>0.004000000000000001</iyy>
+        <iyz>0</iyz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <izz>0.004000000000000001</izz>
+      </inertia>
+    </inertial>
+
+    <collision name="l_back_wheel_collision">
+      <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+
+    <visual name="visual">
+       <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </visual>
+  </link>  
+
+  <link name="r_back_wheel">
+    <pose>-.2 -.21 0 0 0 0</pose>
+    
+    <inertial>
+      <inertia>
+        <!-- (2*mass / 5) * (r*r) -->
+        <ixx>0.004000000000000001</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <iyy>0.004000000000000001</iyy>
+        <iyz>0</iyz>
+        <!-- (2*mass / 5) * (r*r) -->
+        <izz>0.004000000000000001</izz>
+      </inertia>
+    </inertial>
+
+    <collision name="r_back_wheel_collision">
+      <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+
+    <visual name="visual">
+       <geometry>
+        <sphere>
+          <radius>.1</radius>
+        </sphere>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="l_front_wheel_virtual">
+    <pose>.2 .21 0 0 0 0</pose>
+  </link>
+
+  <link name="r_front_wheel_virtual">
+    <pose>.2 -.21 0 0 0 0</pose>
+  </link>
+
+  <link name="l_back_wheel_virtual">
+    <pose>-.2 .21 0 0 0 0</pose>
+  </link>
+
+  <link name="r_back_wheel_virtual">
+    <pose>-.2 -.21 0 0 0 0</pose>
+  </link>
+
+  <joint type="revolute" name="l_front_wheel_pitch">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>chassis</parent>
+    <child>l_front_wheel_virtual</child>
+    <axis>
+      <xyz>0 1 0</xyz>
+    </axis>
+  </joint>
+
+  <joint type="revolute" name="l_front_wheel_roll">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>l_front_wheel_virtual</parent>
+    <child>l_front_wheel</child>
+    <axis>
+      <use_parent_model_frame>1</use_parent_model_frame>
+      <xyz>1 0 0</xyz>
+    </axis>
+  </joint>
+
+  <joint type="revolute" name="r_front_wheel_pitch">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>chassis</parent>
+    <child>r_front_wheel_virtual</child>
+    <axis>
+      <xyz>0 1 0</xyz>
+    </axis>
+  </joint>
+
+  <joint type="revolute" name="r_front_wheel_roll">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>r_front_wheel_virtual</parent>
+    <child>r_front_wheel</child>
+    <axis>
+      <use_parent_model_frame>1</use_parent_model_frame>
+      <xyz>1 0 0</xyz>
+    </axis>
+  </joint>
+
+  <joint type="revolute" name="l_back_wheel_pitch">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>chassis</parent>
+    <child>l_back_wheel_virtual</child>
+    <axis>
+      <xyz>0 1 0</xyz>
+    </axis>
+  </joint>
+
+  <joint type="revolute" name="l_back_wheel_roll">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>l_back_wheel_virtual</parent>
+    <child>l_back_wheel</child>
+    <axis>
+      <use_parent_model_frame>1</use_parent_model_frame>
+      <xyz>1 0 0</xyz>
+    </axis>
+  </joint>
+
+  <joint type="revolute" name="r_back_wheel_pitch">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>chassis</parent>
+    <child>r_back_wheel_virtual</child>
+    <axis>
+      <xyz>0 1 0</xyz>
+    </axis>
+  </joint>
+
+  <joint type="revolute" name="r_back_wheel_roll">
+    <pose>0 0 0 0 0 0</pose>
+
+    <parent>r_back_wheel_virtual</parent>
+    <child>r_back_wheel</child>
+    <axis>
+      <use_parent_model_frame>1</use_parent_model_frame>
+      <xyz>1 0 0</xyz>
+    </axis>
+  </joint>
+
+  <plugin name="VehiclePlugin" filename="libgazeboVehiclePlugin.so"/>
+
+</model>
+</sdf>

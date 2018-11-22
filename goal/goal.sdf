@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+
+<!-- Goal. -->
+<model name="goal">
+  <link name="goal">
+    <pose>4 0 0 0 0 0</pose>
+  
+    <collision name="goal_collision">
+      <geometry>
+        <sphere>
+          <radius>0.4</radius>
+        </sphere>
+      </geometry>
+    </collision>
+
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.4</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>model://vehicle/materials/scripts</uri>
+          <uri>model://vehicle/materials/textures</uri>
+          <name>vehicle/goal</name>
+        </script>
+      </material>
+    </visual>
+  </link>
+</model>
+</sdf>

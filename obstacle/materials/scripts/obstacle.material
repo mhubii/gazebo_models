@@ -1,0 +1,13 @@
+material vehicle/obstacle
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture obstacle.png
+      }
+    }
+  }
+}
