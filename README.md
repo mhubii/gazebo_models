@@ -45,4 +45,4 @@ The repository holds following models.
 
 ## Vehicle
 
-The vehicle supports autonomous navigation, and keyboard controlled navigation. This only works if you built the plurings properly. Please follow the instructions in [gazebo_plugins](https://github.com/mhubii/gazebo_plugins).
+The vehicle supports autonomous navigation, and keyboard controlled navigation. This only works if you built the plugins properly. Please follow the instructions in [gazebo_plugins](https://github.com/mhubii/gazebo_plugins).
