@@ -10,7 +10,8 @@ You can either install the models to a location that Gazebo knows, or update the
 
 Add this line to your `~/.bashrc`
 
-```export GAZEBO_MODEL_PATH=<location to which you cloned this repository>/gazebo_models:$GAZEBO_MODEL_PATH
+```
+export GAZEBO_MODEL_PATH=<location to which you cloned this repository>/gazebo_models:$GAZEBO_MODEL_PATH
 ```
 
 ### Install
