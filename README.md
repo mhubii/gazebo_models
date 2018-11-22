@@ -16,7 +16,7 @@ export GAZEBO_MODEL_PATH=<location to which you cloned this repository>/gazebo_m
 
 ### Install
 
-To install the models do
+You can also install the models. Note that this is no necessary if you already updated your path. To install the models do
 
 ```
 mkdir build
