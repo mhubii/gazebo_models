@@ -1,9 +1,8 @@
 # Gazebo Models
 
-This repository holds models for gazebo. Note that this repository is ment to be a submodule of [path_finding](https://github.com/mhubii/path_finding.git), and [nmpc_pattern_generator](https://github.com/mhubii/nmpc_pattern_generator). In order for some plugins to work properly, please clone these repositories recursively, or make sure to get your paths variable right on the build stage (see [Build](#build)).
+This repository holds models for gazebo. Note that some of the models only fully work with their plugins that can be cloned . To prepare the models for the use with Gazebo, please have a look at the [build section](#build)).
 
 ## Build
-
 
 
 ## Models
@@ -16,3 +15,7 @@ The repository holds following models.
   <figcaption>Fig. 1: Models from left to right: Goal, obstacle, vehicle. </figcaption>
 </figure>
 <br><br>
+
+## Vehicle
+
+The vehicle makes use of plugins that need to be built as described in [gazebo_plugins]https://github.com/mhubii/gazebo_plugins).
