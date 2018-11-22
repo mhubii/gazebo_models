@@ -18,4 +18,4 @@ The repository holds following models.
 
 ## Vehicle
 
-The vehicle makes use of plugins that need to be built as described in [gazebo_plugins]https://github.com/mhubii/gazebo_plugins).
+The vehicle makes use of plugins that need to be built as described in [gazebo_plugins](https://github.com/mhubii/gazebo_plugins).
