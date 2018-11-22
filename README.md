@@ -1,6 +1,6 @@
 # Gazebo Models
 
-This repository holds models for gazebo. Note that some of the models only fully work with their plugins that can be cloned . To prepare the models for the use with Gazebo, please have a look at the [build section](#build)).
+This repository holds models for gazebo. Note that some of the models only functionally work with their plugins that need to be built first. Therefore, please have a look at the respective model sections below. To prepare the models for the use with Gazebo, please have a look at the [build section](#build)).
 
 ## Build
 
@@ -18,4 +18,4 @@ The repository holds following models.
 
 ## Vehicle
 
-The vehicle makes use of plugins that need to be built as described in [gazebo_plugins]https://github.com/mhubii/gazebo_plugins).
+The vehicle supports autonomous navigation, and therefore makes use of plugins that need to be built as described in [gazebo_plugins](https://github.com/mhubii/gazebo_plugins).
