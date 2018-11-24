@@ -34,7 +34,7 @@ make uninstall
 
 ## Models
 
-The repository holds following models.
+The repository holds following models
 
 <br>
 <figure>
