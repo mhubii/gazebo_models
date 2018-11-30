@@ -3,8 +3,10 @@
 
 <!-- Obstacle -->
 <model name="obstacle">
+  <static>true</static>
+
   <link name="obstacle">
-    <pose>0 0 0 0 0 0</pose>
+    <pose>0 0 0.2 0 0 0</pose>
   
     <collision name="collision">
       <geometry>
