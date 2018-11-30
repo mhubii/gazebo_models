@@ -51,14 +51,14 @@
       <pose>.3 0 .15 0 0 0</pose>
       <visualize>true</visualize>
       <always_on>1</always_on>
-      <update_rate>30</update_rate>
+      <update_rate>10</update_rate>
 
       <camera name="left">
         <pose>0 .1 0 0 0 0</pose>
         <horizontal_fov>1.5708</horizontal_fov>
         <image>
-          <width>320</width>
-          <height>240</height>
+          <width>160</width>
+          <height>120</height>
         </image>
         <clip>
           <near>0.1</near>
@@ -70,8 +70,8 @@
         <pose>0 -.1 0 0 0 0</pose>
         <horizontal_fov>1.5708</horizontal_fov>
         <image>
-          <width>320</width>
-          <height>240</height>
+          <width>160</width>
+          <height>120</height>
         </image>
         <clip>
           <near>0.1</near>
@@ -317,7 +317,15 @@
     </axis>
   </joint>
 
-  <plugin name="VehiclePlugin" filename="libgazeboVehiclePlugin.so"/>
+  <plugin name="VehicleManualControl" filename="libgazeboVehicleManualControl.so">
+    <record img_location="/home/martin/Downloads/navigation/python/data" txt_location="/home/martin/Downloads/navigation/python/data">true</record>
+  </plugin>
+
+  <!--plugin name="VehicleAutonomousControl" filename="">
+    <network_architecture></network_architecture>
+  </plugin-->
+
+  <!--plugin name="VehicleQLearning" filename="libgazeboVehicleQLearning.so"/-->
 
 </model>
 </sdf>
