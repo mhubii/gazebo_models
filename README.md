@@ -16,7 +16,7 @@ export GAZEBO_MODEL_PATH=<location to which you cloned this repository>/gazebo_m
 
 ### Install
 
-You can also install the models. Note that this is no necessary if you already updated your path. To install the models do
+You can also install the models. Note that this is not necessary if you already updated your path. To install the models do
 
 ```
 mkdir build
@@ -34,7 +34,7 @@ make uninstall
 
 ## Models
 
-The repository holds following models.
+The repository holds following models
 
 <br>
 <figure>
