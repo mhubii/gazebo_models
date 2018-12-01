@@ -317,13 +317,13 @@
     </axis>
   </joint>
 
-  <plugin name="VehicleManualControl" filename="libgazeboVehicleManualControl.so">
+  <!--plugin name="VehicleManualControl" filename="libgazeboVehicleManualControl.so">
     <record img_location="/home/martin/Downloads/navigation/python/data" txt_location="/home/martin/Downloads/navigation/python/data">true</record>
-  </plugin>
-
-  <!--plugin name="VehicleAutonomousControl" filename="">
-    <network_architecture></network_architecture>
   </plugin-->
+
+  <plugin name="VehicleAutonomousControl" filename="libgazeboVehicleAutonomousControl.so">
+    <autonomous script_module="/home/martin/Downloads/navigation/python/trained_script_module.pt">true</autonomous>
+  </plugin>
 
   <!--plugin name="VehicleQLearning" filename="libgazeboVehicleQLearning.so"/-->
 
