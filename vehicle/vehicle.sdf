@@ -51,7 +51,7 @@
       <pose>.3 0 .15 0 0 0</pose>
       <visualize>true</visualize>
       <always_on>1</always_on>
-      <update_rate>10</update_rate>
+      <update_rate>30</update_rate>
 
       <camera name="left">
         <pose>0 .1 0 0 0 0</pose>
