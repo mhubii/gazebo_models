@@ -38,7 +38,7 @@ The repository holds following models
 
 <br>
 <figure>
-  <p align="left"><img src="img/goal.jpg" width="25%" height="25%" hspace="30"><img src="img/obstacle.jpg" width="25%" height="25%" hspace="30"><img src="img/lined_plane.jpg" width="25%" height="25%" hspace="30"><br><img src="img/vehicle.jpg" width="25%" height="25%" hspace="40"><img src="img/heicub.jpg" width="25%" height="25%" hspace="40"></p>
+  <p align="left"><img src="img/goal.jpg" width="25%" height="25%" hspace="30"><img src="img/obstacle.jpg" width="25%" height="25%" hspace="30"><img src="img/lined_plane.jpg" width="25%" height="25%" hspace="30"><br><img src="img/vehicle.jpg" width="25%" height="25%" hspace="30"><img src="img/heicub.jpg" width="25%" height="25%" hspace="30"></p>
   <figcaption>Fig. 1: Models from left to right: Goal, obstacle, lined plane, vehicle, heicub. </figcaption>
 </figure>
 <br><br>
