@@ -49,5 +49,5 @@ The vehicle supports autonomous navigation, and keyboard controlled navigation. 
 
 ## Heicub
 
-Heicub supports autonomous navigation, and keyboard controlled navigation. The communication is internally done with YARP, as the model mirrors the behaviour for the real robot. To install YARP, follow the [install instructions](http://www.yarp.it/install.html). Also, for YARP to communicate with Gazebo, you need to install the gazebo-yarp-plugins, therefore, please follow the [install instructions](http://robotology.gitlab.io/docs/gazebo-yarp-plugins/master/install.html). 
+Heicub supports autonomous navigation, and keyboard controlled navigation. You need to install [YARP](http://www.yarp.it/install.html), because it internally manages the communication and the model mirrors the behaviour for the real robot. Also, for YARP to communicate with Gazebo, you need to install the [gazebo-yarp-plugins](http://robotology.gitlab.io/docs/gazebo-yarp-plugins/master/install.html). 
 Since the walking of the robot is based on Nonlinear Model Predictive Control, you also need to install the library that performs the optimization. Please follow the instructions in [nmpc_pattern_generator](https://github.com/mhubii/nmpc_pattern_generator.git).
