@@ -46,3 +46,7 @@ The repository holds following models
 ## Vehicle
 
 The vehicle supports autonomous navigation, and keyboard controlled navigation. This only works if you built the plugins properly. Please follow the instructions in [gazebo_plugins](https://github.com/mhubii/gazebo_plugins).
+
+## Heicub
+
+Heicub supports autonomous navigation, and keyboard controlled navigation. The communication is internally done with YARP, as the model mirrors the behaviour for the real robot. To install YARP, follow the [install instructions](http://www.yarp.it/install.html). Also, for YARP to communicate with Gazebo, you need to install the [gazebo-yarp-plugins](http://robotology.gitlab.io/docs/gazebo-yarp-plugins/master/install.html).
