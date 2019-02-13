@@ -57,8 +57,8 @@
         <pose>0 .1 0 0 0 0</pose>
         <horizontal_fov>1.5708</horizontal_fov>
         <image>
-          <width>160</width>
-          <height>120</height>
+          <width>80</width>
+          <height>60</height>
         </image>
         <clip>
           <near>0.1</near>
@@ -70,8 +70,8 @@
         <pose>0 -.1 0 0 0 0</pose>
         <horizontal_fov>1.5708</horizontal_fov>
         <image>
-          <width>160</width>
-          <height>120</height>
+          <width>80</width>
+          <height>60</height>
         </image>
         <clip>
           <near>0.1</near>
@@ -317,15 +317,30 @@
     </axis>
   </joint>
 
+  <!-- Manual Control -->
   <!--plugin name="VehicleManualControl" filename="libgazeboVehicleManualControl.so">
-    <record img_location="/home/martin/Downloads/navigation/python/data" txt_location="/home/martin/Downloads/navigation/python/data">true</record>
+    <record img_location="/home/martin/Downloads/navigation/python/data" txt_location="/home/martin/Downloads/navigation/python/data">false</record>
   </plugin-->
 
-  <plugin name="VehicleAutonomousControl" filename="libgazeboVehicleAutonomousControl.so">
-    <autonomous script_module="/home/martin/Downloads/navigation/python/trained_script_module.pt">true</autonomous>
-  </plugin>
+  <!-- Manual Control with SLAM -->
+  <!--plugin name="VehicleManualControlSlam" filename="libgazeboVehicleManualControlSlam.so">
+    <record img_location="/home/martin/Downloads/navigation/python/data" txt_location="/home/martin/Downloads/navigation/python/data">false</record>
+  </plugin-->
 
-  <!--plugin name="VehicleQLearning" filename="libgazeboVehicleQLearning.so"/-->
+  <!-- Autonomous Control -->
+  <!--plugin name="VehicleAutonomousControl" filename="libgazeboVehicleAutonomousControl.so">
+    <autonomous script_module="/home/martin/Downloads/navigation/python/trained_script_module.pt">true</autonomous>
+  </plugin-->
+
+  <!-- Reinforcement Learning -->
+  <!--plugin name="VehicleReinforcementLearning" filename="libgazeboVehicleReinforcementLearning.so">
+    <autonomous mode="train">true</autonomous>
+  </plugin-->
+
+  <!-- Hybrid Learning -->
+  <plugin name="VehicleHybridLearning" filename="libgazeboVehicleHybridLearning.so">
+    <autonomous mode="train" batch_size="128" buffer_size="2560" max_episodes="100" max_steps="600" reward_win="1000" reward_loss="-1000" cost_step="0.01" reward_goal_factor="100">true</autonomous>
+  </plugin>
 
 </model>
 </sdf>
