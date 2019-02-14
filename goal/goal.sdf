@@ -3,7 +3,7 @@
 
 <!-- Goal. -->
 <model name="goal">
-  <static>true</static>
+  <static>false</static>
 
   <link name="goal">
     <pose>0 0 0.4 0 0 0</pose>
