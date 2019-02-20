@@ -6,12 +6,12 @@
   <static>false</static>
 
   <link name="obstacle">
-    <pose>0 0 0.2 0 0 0</pose>
+    <pose>0 0 0.1 0 0 0</pose>
   
     <collision name="collision">
       <geometry>
         <box>
-          <size>0.4 0.4 0.4</size>
+          <size>0.2 0.2 0.2</size>
         </box>
       </geometry>
     </collision>
@@ -19,7 +19,7 @@
     <visual name="visual">
       <geometry>
         <box>
-          <size>0.4 0.4 0.4</size>
+          <size>0.2 0.2 0.2</size>
         </box>
       </geometry>
       <material>
