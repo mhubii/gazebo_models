@@ -338,8 +338,17 @@
   </plugin-->
 
   <!-- Hybrid Learning -->
-  <plugin name="VehicleHybridLearning" filename="libgazeboVehicleHybridLearning.so">
-    <autonomous mode="train" batch_size="128" buffer_size="2560" max_episodes="100" max_steps="600" reward_win="1000" reward_loss="-1000" cost_step="0.01" reward_goal_factor="100" randomness="true">true</autonomous>
+  <!--plugin name="VehicleHybridLearning" filename="libgazeboVehicleHybridLearning.so">
+    <autonomous mode="train" batch_size="256" buffer_size="2560" max_episodes="500" max_steps="1000" reward_win="10000" reward_loss="-10000" cost_step="0.001" reward_goal_factor="200" randomness="true">true</autonomous>
+    <track location="/home/martin/Documents/gazebo_plugins/eval/data">true</track>
+    <prior location="/home/martin/Documents/gazebo_plugins/eval/data/22_02">true</prior>
+  </plugin-->
+
+  <!-- Proximal Policy Optimization -->
+  <plugin name="" filename="libgazeboVehiclePPOLearning.so">
+    <autonomous mode="train" n_steps="64" mini_batch_size="16" max_episodes="500" max_steps="1000" reward_win="10000" reward_loss="-10000" cost_step="0.001" reward_goal_factor="200" randomness="true">true</autonomous>
+    <track location="/home/martin/Documents/gazebo_plugins/eval/data">false</track>
+    <prior location="/home/martin/Documents/gazebo_plugins/eval/data/22_02">true</prior>
   </plugin>
 
 </model>
