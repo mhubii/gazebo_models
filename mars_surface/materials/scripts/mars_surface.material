@@ -1,0 +1,13 @@
+material mars_surface
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture mars_surface.png
+      }
+    }
+  }
+}

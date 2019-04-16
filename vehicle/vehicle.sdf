@@ -345,10 +345,10 @@
   </plugin-->
 
   <!-- Proximal Policy Optimization -->
-  <plugin name="" filename="libgazeboVehiclePPOLearning.so">
-    <autonomous mode="train" n_steps="64" mini_batch_size="16" max_episodes="500" max_steps="1000" reward_win="10000" reward_loss="-10000" cost_step="0.001" reward_goal_factor="200" randomness="true">true</autonomous>
+  <plugin name="VehiclePPOLearning" filename="libgazeboVehiclePPOLearning.so">
+    <settings mode="train" ppo_steps="64" mini_batch_size="16" ppo_epochs="8" max_episodes="500" max_steps="1000" reward_win="10000" reward_loss="-10000" cost_step="0.001" reward_goal_factor="200" randomness="true"></settings>
     <track location="/home/martin/Documents/gazebo_plugins/eval/data">false</track>
-    <prior location="/home/martin/Documents/gazebo_plugins/eval/data/22_02">true</prior>
+    <prior location="/home/martin/Documents/gazebo_plugins/eval/data/22_02">false</prior>
   </plugin>
 
 </model>

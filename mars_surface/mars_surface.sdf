@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+
+<!-- Mars surface. -->
+<model name="mars_surface">
+  <static>true</static>
+
+  <link name="mars_surface">
+    <collision name="collision">
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+            <size>20 20</size>
+        </plane>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+
+    <visual name="visual">
+      <cast_shadows>false</cast_shadows>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+          <size>20 20</size>
+        </plane>
+      </geometry>
+      <material>
+        <script>
+          <uri>model://mars_surface/materials/scripts</uri>
+          <uri>model://mars_surface/materials/textures</uri>
+          <name>mars_surface</name>
+        </script>
+      </material>
+    </visual>
+  </link>
+</model>
+</sdf>
