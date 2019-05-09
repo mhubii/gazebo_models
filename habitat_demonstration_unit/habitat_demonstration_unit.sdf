@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="habitat_demonstration_unit">
+    <static>true</static>
+    <pose>0 0 0 1.570796327 0 0</pose>
+    <link name="link_01">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.005 0.005 0.005</scale>
+            <uri>model://habitat_demonstration_unit/meshes/HDU_lowRez_part1.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.005 0.005 0.005</scale>
+            <uri>model://habitat_demonstration_unit/meshes/HDU_lowRez_part1.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <model name="habitat_demonstration_unit_02">
+      <static>true</static>
+      <link name="link_02">
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <scale>0.005 0.005 0.005</scale>
+              <uri>model://habitat_demonstration_unit/meshes/HDU_lowRez_part2.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <scale>0.005 0.005 0.005</scale>
+              <uri>model://habitat_demonstration_unit/meshes/HDU_lowRez_part2.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+  </model>
+</sdf>
+
