@@ -3,41 +3,15 @@
 
 <!-- Calibration plane. -->
 <model name="calibration_plane">
-
-  <link name="calibration_plane">
-    <collision name="collision">
-      <geometry>
-        <plane>
-          <normal>0 0 1</normal>
-            <size>2.57 2</size>
-        </plane>
-      </geometry>
-      <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>50</mu2>
-          </ode>
-        </friction>
-      </surface>
-    </collision>
-
-    <visual name="visual">
-      <cast_shadows>false</cast_shadows>
-      <geometry>
-        <plane>
-          <normal>0 0 1</normal>
-          <size>2.57 2</size>
-        </plane>
-      </geometry>
-      <material>
-        <script>
-          <uri>model://calibration_plane/materials/scripts</uri>
-          <uri>model://calibration_plane/materials/textures</uri>
-          <name>calibration_plane</name>
-        </script>
-      </material>
-    </visual>
-  </link>
-</model>
+  <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://calibration_plane/meshes/calibration_plane.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
 </sdf>
