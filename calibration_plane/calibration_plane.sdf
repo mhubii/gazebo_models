@@ -3,7 +3,6 @@
 
 <!-- Calibration plane. -->
 <model name="calibration_plane">
-  <static>true</static>
 
   <link name="calibration_plane">
     <collision name="collision">
