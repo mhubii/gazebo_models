@@ -1,0 +1,13 @@
+material calibration_plane
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture calibration_plane.png
+      }
+    }
+  }
+}
