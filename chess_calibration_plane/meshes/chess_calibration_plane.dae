@@ -12,7 +12,7 @@
   </asset>
   <library_images>
     <image id="calib_png" name="calib_png">
-      <init_from>calibration_plane.png</init_from>
+      <init_from>chess_calibration_plane.png</init_from>
     </image>
   </library_images>
   <library_effects>
