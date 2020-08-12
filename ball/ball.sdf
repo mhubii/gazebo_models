@@ -22,12 +22,12 @@
           <radius>0.4</radius>
         </sphere>
       </geometry>
-        <material> <!-- Wheel material -->
-          <ambient>0.1 0.1 0.1 1</ambient>
-          <diffuse>0.1 0.1 0.2 1</diffuse>
-          <specular>0 0 0 0</specular>
-          <emissive>0 0 0 1</emissive>
-        </material> <!-- End wheel material -->
+      <material> <!-- Wheel material -->
+        <ambient>0.1 0.1 0.1 1</ambient>
+        <diffuse>0.1 0.1 0.2 1</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material> <!-- End wheel material -->
     </visual>
   </link>
   <plugin name="InfinitySpawn" filename="libgazeboInfinitySpawn.so"/>
