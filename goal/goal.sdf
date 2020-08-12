@@ -6,7 +6,7 @@
   <static>false</static>
 
   <link name="goal">
-    <pose>0 0 0.4 0 0 0</pose>
+    <pose>0 0 1. 0 0 0</pose>
   
     <collision name="goal_collision">
       <geometry>
@@ -31,5 +31,6 @@
       </material>
     </visual>
   </link>
+  <plugin name="InfinitySpawn" filename="libgazeboInfinitySpawn.so"/>
 </model>
 </sdf>
