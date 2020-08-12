@@ -6,7 +6,7 @@
   <static>false</static>
 
   <link name="goal">
-    <pose>0 0 0.4 0 0 0</pose>
+    <pose>0 0 1. 0 0 0</pose>
   
     <collision name="goal_collision">
       <geometry>
@@ -22,14 +22,14 @@
           <radius>0.4</radius>
         </sphere>
       </geometry>
-      <material>
-        <script>
-          <uri>model://goal/materials/scripts</uri>
-          <uri>model://goal/materials/textures</uri>
-          <name>goal</name>
-        </script>
-      </material>
+        <material> <!-- Wheel material -->
+          <ambient>0.1 0.1 0.1 1</ambient>
+          <diffuse>0.1 0.1 0.2 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material> <!-- End wheel material -->
     </visual>
   </link>
+  <plugin name="InfinitySpawn" filename="libgazeboInfinitySpawn.so"/>
 </model>
 </sdf>
