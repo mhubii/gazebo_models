@@ -30,6 +30,8 @@
       </material> <!-- End wheel material -->
     </visual>
   </link>
-  <plugin name="InfinitySpawn" filename="libgazeboInfinitySpawn.so"/>
+  <plugin name="InfinitySpawn" filename="libgazeboInfinitySpawn.so">
+    <timescaling value=0.1/>
+  </plugin>
 </model>
 </sdf>
